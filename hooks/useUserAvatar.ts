@@ -8,7 +8,7 @@ export const useUserAvatar = () => {
 
   useEffect(() => {
     if (user.image) {
-      setSrc(user.image)
+      setSrc(user.image.url)
       return
     }
 

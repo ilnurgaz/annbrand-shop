@@ -43,7 +43,7 @@ export const uploadUserAvatarFx = profile.createEffect(
         return result
       }
 
-      updateUserImage(data.image)
+      updateUserImage(data.image.url)
       return data
     } catch (error) {
       toast.error((error as Error).message)

@@ -13,7 +13,7 @@ export const $user = user
   .createStore<IUser>({} as IUser)
   .on(loginCheckFx.done, (_, { result }) => result)
   .on(updateUsername, (state, name) => ({ ...state, name }))
-  .on(updateUserImage, (state, image) => ({ ...state, image }))
+  .on(updateUserImage, (state, image) => ({ ...state, image: { url: image } }))
   .on(updateUserEmail, (state, email) => ({ ...state, email }))
 
 export const $userGeolocation = user

@@ -12,16 +12,16 @@ export const useProductImages = (product: IProduct) => {
       }))
 
     if (product.images.length < 4) {
-      const images = []
+      const images: string[] = []
 
       for (let i = 0; i < 4; i++) {
-        images.push(product.images[0])
+        images.push(product.images[0].url) 
       }
 
       return makeImagesObjects(images)
     }
 
-    return makeImagesObjects(product.images)
+    return makeImagesObjects(product.images.map(image => image.url))
   }, [product.images, product.name])
 
   return images
