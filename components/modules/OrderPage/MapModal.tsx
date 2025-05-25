@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { closeMapModal } from '@/context/modals'
 import { useLang } from '@/hooks/useLang'
 import { removeOverflowHiddenFromBody } from '@/lib/utils/common'

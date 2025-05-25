@@ -99,12 +99,10 @@ const OrderInfoBlock = ({
     let description = ''
 
     if (chosenCourierAddressData.address_line1) {
-      // eslint-disable-next-line max-len
       description = `Адрес достаки товара курьером: ${chosenCourierAddressData.address_line1}, ${chosenCourierAddressData.address_line2}`
     }
 
     if (chosenPickupAddressData.address_line1) {
-      // eslint-disable-next-line max-len
       description = `Адрес получения товара: ${chosenPickupAddressData.address_line1}, ${chosenPickupAddressData.address_line2}`
     }
 

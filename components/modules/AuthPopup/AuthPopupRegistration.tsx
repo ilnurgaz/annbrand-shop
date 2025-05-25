@@ -8,17 +8,13 @@ import NameInput from './NameInput'
 import EmailInput from './EmailInput'
 import PasswordInput from './PasswordInput'
 import { useLang } from '@/hooks/useLang'
-// import AuthPopupSocials from './AuthPopupSocials'
 
 const AuthPopupRegistration = ({
   toggleAuth,
-  // isSideActive,
 }: IAuthSideProps) => {
   const { lang, translations } = useLang()
   const { spinner, register, errors, handleSubmit } = useAuthForm(
     singUpFx.pending
-    // isSideActive,
-    // handleSignUp
   )
 
   const submitForm = (data: IInputs) =>

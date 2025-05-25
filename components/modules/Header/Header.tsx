@@ -41,7 +41,6 @@ const Header = () => {
   const isAuth = useUnit($isAuth)
   const loginCheckSpinner = useUnit(loginCheckFx.pending)
   const { lang, translations } = useLang()
-  // const user = useUnit($user)
   const currentFavoritesByAuth = useGoodsByAuth($favorites, $favoritesFromLS)
   const currentComparisonByAuth = useGoodsByAuth($comparison, $comparisonFromLs)
 

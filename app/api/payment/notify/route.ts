@@ -4,7 +4,6 @@ import { getDbAndReqBody } from '@/lib/utils/api-routes'
 import { corsHeaders } from '@/constants/corsHeaders'
 import { sendMail } from '@/service/mailService'
 
-// Вынесена из блока
 function parseMessage(message: string) {
   const [addressLine, rest] = message.split('\n\n').map(line => line.trim())
 

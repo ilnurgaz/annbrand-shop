@@ -51,7 +51,6 @@ export interface ISelectBtnProps {
 export interface ICatalogFiltersProps {
   handleApplyFiltersWithPrice: (arg0: string, arg1: string) => void
   handleApplyFiltersWithSizes: (sizes: string[]) => void
-  handleApplyFiltersWithColors: (sizes: string[]) => void
   handleApplyFiltersBySort: (arg0: string) => void
 }
 

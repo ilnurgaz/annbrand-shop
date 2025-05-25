@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import Link from 'next/link'
 import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

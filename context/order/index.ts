@@ -14,7 +14,6 @@ import { handleJWTError } from '@/lib/utils/errors'
 export const order = createDomain()
 export const setPickupTab = order.createEvent<boolean>()
 export const setCourierTab = order.createEvent<boolean>()
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const setMapInstance = order.createEvent<any>()
 export const setShouldLoadAnnbrandData = order.createEvent<boolean>()
 export const setChosenPickupAddressData =

@@ -70,7 +70,6 @@ const CartListItem = ({ item }: { item: ICartItem }) => {
           </span>
         </div>
         <ProductCounter
-          // eslint-disable-next-line max-len
           className={`cart-list__item__counter ${styles.cart__list__item__counter} ${styles.cart__list__item__inner__block}`}
           count={count}
           setCount={setCount}

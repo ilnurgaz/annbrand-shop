@@ -39,7 +39,6 @@ export const getGeolocationFx = createEffect(
   async ({ lon, lat }: IGetGeolocationFx) => {
     try {
       const data = await api.get(
-        // eslint-disable-next-line max-len
         `https://api.geoapify.com/v1/geocode/reverse?lat=${lat}&lon=${lon}&apiKey=${process.env.NEXT_PUBLIC_GEOAPIFY_API_KEY}`
       )
 

@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Slider from 'react-slick'
 import QuickViewModalSliderArrow from '@/components/elements/QuickViewModalSliderArrow/QuickViewModalSliderArrow'
 import { useMediaQuery } from '@/hooks/useMediaQuery'

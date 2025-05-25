@@ -1,5 +1,3 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 'use client'
 import { useUnit } from 'effector-react'
 import toast from 'react-hot-toast'
@@ -252,7 +250,6 @@ const OrderDelivery = () => {
             )}
             {shouldShowCourierAddressData &&
               !!chosenCourierAddressData.address_line1 && (
-            // eslint-disable-next-line indent
                 <CourierAddressInfo />
             )}
           </motion.div>

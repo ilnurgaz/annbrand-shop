@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { capitalizeFirstLetter } from '@/lib/utils/common'
 import { useLang } from './useLang'
 import { loadProductsByFilterFx } from '@/context/goods'

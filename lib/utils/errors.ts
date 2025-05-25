@@ -1,4 +1,3 @@
-/* eslint-disable indent */
 import { JWTError } from '@/constants/jwt'
 import { refreshTokenFx } from '@/context/auth'
 import {

@@ -1,5 +1,3 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable indent */
 import toast from 'react-hot-toast'
 import { useUnit } from 'effector-react'
 import { useCartAction } from '@/hooks/useCartAction'

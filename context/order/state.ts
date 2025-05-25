@@ -29,7 +29,6 @@ export const $courierTab = order
   .on(setCourierTab, (_, value) => value)
 
 export const $mapInstance = order
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   .createStore<any>({})
   .on(setMapInstance, (_, map) => map)
 

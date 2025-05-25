@@ -111,10 +111,9 @@ export const isValidAccessToken = async (token: string | undefined) => {
       token,
       process.env.NEXT_PUBLIC_ACCESS_TOKEN_KEY as string
     )
-    // Если в payload есть email, то возвращаем его тоже
     return {
       status: 200,
-      data: payload, // здесь payload содержит декодированные данные из токена
+      data: payload, 
     }
   } catch (err) {
     return {

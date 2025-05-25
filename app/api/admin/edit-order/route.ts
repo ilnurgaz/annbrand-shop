@@ -8,7 +8,6 @@ export async function POST(req: Request) {
   try {
     const { db, reqBody } = await getDbAndReqBody(clientPromise, req)
 
-    // Проверяем валидность ID заказа
     const isValidId = ObjectId.isValid(reqBody.id as string)
     if (!isValidId) {
       return NextResponse.json(
@@ -20,7 +19,6 @@ export async function POST(req: Request) {
       )
     }
 
-    // Ищем заказ в коллекции "orders" (укажите правильное имя коллекции)
     const order = await db.collection('orders').findOne({ _id: new ObjectId(reqBody.id) })
 
     if (!order) {
@@ -33,18 +31,15 @@ export async function POST(req: Request) {
       )
     }
 
-    // Обновляем статус заказа
     await db.collection('orders').updateOne(
       { _id: new ObjectId(reqBody.id) },
       {
         $set: {
           status: reqBody.status,
-          // Если нужно обновлять еще поля, добавьте их сюда
         },
       }
     )
 
-    // Получаем обновленный заказ
     const updatedOrder = await db.collection('orders').findOne({ _id: new ObjectId(reqBody.id) })
 
     return NextResponse.json(

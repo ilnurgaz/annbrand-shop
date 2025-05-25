@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Script from 'next/script'
 
 const YandexMetrika = ({ id }: { id: string }) => (

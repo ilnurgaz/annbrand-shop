@@ -8,7 +8,6 @@ export const useTTMap = () => {
   const handleSelectAddress = async (
     { lon1, lat1, lon2, lat2 }: IAddressBBox,
     position: IAddressPosition,
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     initialMapInstance?: any
   ) => {
     const ttMaps = await import(`@tomtom-international/web-sdk-maps`)

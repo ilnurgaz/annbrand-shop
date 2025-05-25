@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-indent */
 'use client'
 import { useUnit } from 'effector-react'
 import { motion } from 'framer-motion'

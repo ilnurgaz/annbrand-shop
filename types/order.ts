@@ -57,7 +57,6 @@ export interface IAddressesListProps {
   handleSelectAddressByMarkers?: (
     arg0: IAddressBBox,
     arg1: IAddressPosition,
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     arg2?: any
   ) => void
 }

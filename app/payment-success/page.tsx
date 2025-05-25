@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 'use client'
 import { useUnit } from 'effector-react'
 import { notFound } from 'next/navigation'
@@ -45,7 +44,6 @@ export default function Favorites() {
       let productDetails = ''
       let totalAmount = paymentData.amount?.value || '0.00'
   
-      // Добавляем список товаров, если есть
       if (paymentData.metadata?.products && Array.isArray(paymentData.metadata.products)) {
         const products = paymentData.metadata.products as Array<{
           name: string
@@ -63,7 +61,6 @@ export default function Favorites() {
         description += `\n\nОбщая сумма: ${totalAmount}₽`
       }
   
-      // Добавляем данные получателя, если есть другие строки
       if (paymentData.metadata && Object.values(paymentData.metadata).some(item => typeof item === 'string')) {
         const recipientData = Object.values(paymentData.metadata)
           .filter((item) => typeof item === 'string' && !['[object Object]', '[object Array]'].includes(Object.prototype.toString.call(item)))
@@ -122,7 +119,6 @@ export default function Favorites() {
                       : `${translations[lang].payment_success.order_info
                         .replace(
                           '1-info',
-                          // eslint-disable-next-line max-len
                           `<span className=${styles.payment_success__num}>№${paymentData.id}</span>`
                         )
                         .replace(

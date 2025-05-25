@@ -1,5 +1,3 @@
-/* eslint-disable indent */
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { faker } = require('@faker-js/faker')
 
 const getRandomArrayValue = (arr) => arr[Math.floor(Math.random() * arr.length)]

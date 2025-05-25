@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { NextResponse } from 'next/server'
 import path from 'path'
 import { ObjectId } from 'mongodb'

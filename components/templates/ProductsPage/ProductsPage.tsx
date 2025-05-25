@@ -1,4 +1,3 @@
-/* eslint-disable indent */
 'use client'
 import ReactPaginate from 'react-paginate'
 import { useEffect } from 'react'
