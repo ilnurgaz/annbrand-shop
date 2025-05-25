@@ -1,14 +1,19 @@
-import Slider from 'react-slick'
+import React from 'react'
+import ReactSlickSlider from 'react-slick'
+import type { Settings } from 'react-slick'
 import QuickViewModalSliderArrow from '@/components/elements/QuickViewModalSliderArrow/QuickViewModalSliderArrow'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
 import styles from '@/styles/quick-view-modal/index.module.scss'
 import { IProduct } from '@/types/common'
 
+// Явно указываем тип Slider как FC
+const Slider = ReactSlickSlider as unknown as React.FC<Settings & { children?: React.ReactNode; className?: string }>
+
 const QuickViewModalSlider = ({ images }: { images: IProduct['images'] }) => {
   const isMedia1070 = useMediaQuery(1070)
   const isMedia890 = useMediaQuery(890)
 
-  const settings = {
+  const settings: Settings = {
     dots: true,
     infinite: true,
     slidesToScroll: 1,
@@ -19,9 +24,7 @@ const QuickViewModalSlider = ({ images }: { images: IProduct['images'] }) => {
     prevArrow: <QuickViewModalSliderArrow directionClassName={styles.prev} />,
     appendDots: (dots: React.ReactNode) => <ul>{dots}</ul>,
     customPaging: () => (
-      <button
-        className={`btn-reset ${styles.modal__left__slider__slide__dot}`}
-      />
+      <button className={`btn-reset ${styles.modal__left__slider__slide__dot}`} />
     ),
   }
 
