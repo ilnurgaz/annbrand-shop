@@ -27,4 +27,3 @@ export const useUserAvatar = () => {
 
   return { src, alt: user.name }
 }
-уцауц
