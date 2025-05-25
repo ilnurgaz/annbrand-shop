@@ -3,8 +3,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'lh3.googleusercontent.com' },
-      { protocol: 'http', hostname: 'localhost' },
-      { protocol: 'https', hostname: 'localhost' },
+      { protocol: 'http', hostname: 'annbrand-shop-7ci1.vercel.app' },
+      { protocol: 'https', hostname: 'annbrand-shop-7ci1.vercel.app' },
     ],
   },
 }
