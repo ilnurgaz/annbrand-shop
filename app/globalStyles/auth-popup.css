@@ -1,0 +1,245 @@
+.auth-popup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 111;
+}
+
+.auth-popup__close {
+  height: 15px;
+  width: 15px;
+  z-index: 1;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.auth-popup__close::before {
+  background-color: #000000;
+  content: '';
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: background-color 0.2s ease-in-out;
+  -webkit-mask: url(/img/close-small.svg) no-repeat 50% 50%;
+  mask: url(/img/close-small.svg) no-repeat 50% 50%;
+}
+
+.auth-popup__card {
+  max-width: 470px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1000;
+  border: none;
+  border-radius: 30px;
+  background-color: #000000;
+  perspective: 1000px;
+}
+
+.auth-popup__card__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.auth-popup__card.switched .auth-popup__card__inner {
+  transform: rotateY(180deg);
+}
+
+.card-body {
+  padding: 16px;
+  color: #E8E9EA;
+}
+
+.card-body__title {
+  margin: 0;
+  color: #000000ed;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.card-body__description {
+  margin: 0;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-body__inner {
+  margin-top: 30px;
+}
+
+.inner__top {
+  margin-bottom: 12px;
+}
+
+.popup__close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.wow-bg {
+  background-color: #ffffff;
+  border: 1px solid #2e2e4c;
+  border-radius: 10px;
+  margin-top: 4px;
+}
+
+.starsec {
+  content: " ";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  animation: animStar 150s linear infinite;
+  z-index: 10;
+}
+
+.starthird {
+  content: " ";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  animation: animStar 10s linear infinite;
+  z-index: 10;
+}
+
+.starfourth {
+  content: " ";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  animation: animStar 50s linear infinite;
+  z-index: 10;
+}
+
+.starfifth {
+  content: " ";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  animation: animStar 80s linear infinite;
+  z-index: 10;
+}
+
+@keyframes animStar {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-2000px);
+  }
+}
+
+.inner__btn {
+  background: #bebebe;
+  border-radius: 30px;
+  width: 100%;
+  min-height: 38px;
+  overflow: hidden;
+  border: 1px solid #000000;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  color: #000000;
+}
+
+.inner__btn:hover {
+  background-color: #a3a3a3;
+  border-radius: 50px;
+  min-width: 140px;
+  border-style: solid;
+  border-color: #2e344d;
+}
+
+.form__block__input {
+  width: 100%;
+  height: 38px;
+  padding: 6px 12px;
+  background: rgba(28, 31, 47, 0.16);
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #2e344d;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  margin-top: 24px;
+  color: #000000;
+}
+
+.form__block {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.form__block__input::placeholder {
+  color: #000000;
+}
+
+.form__block__input:focus {
+  border: 1px solid #344d2e;
+  outline: 0;
+  background: rgb(184, 184, 184);
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.inner__reset {
+  margin-top: 10px;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.inner__switch {
+  color: #000000;
+}
+
+.inner__reset:hover {
+  color: #344d2e;
+  text-decoration: underline;
+}
+
+.inner__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.inner__bottom__text {
+  color: #000000;
+  margin-right: 10px;
+}
