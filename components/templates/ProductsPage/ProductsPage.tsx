@@ -155,7 +155,6 @@ const ProductsPage = ({ searchParams, pageName }: IProductsPage) => {
       <CatalogFilters
         handleApplyFiltersWithPrice={handleApplyFiltersWithPrice}
         handleApplyFiltersWithSizes={handleApplyFiltersWithSizes}
-        handleApplyFiltersWithColors={handleApplyFiltersWithColors}
         handleApplyFiltersBySort={handleApplyFiltersBySort}
       />
       {productsSpinner && (
