@@ -695,11 +695,11 @@
 
   &:hover span::before {
     transition: background-color 0.2s ease-in-out;
-    background-color: #9466FF;
+    background-color: #000000;
   }
 
   &:hover {
-    color: #9466FF;
+    color: #000000;
     transition: color .2s ease-in-out;
   }
 }

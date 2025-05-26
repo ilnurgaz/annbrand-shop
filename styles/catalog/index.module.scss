@@ -537,8 +537,8 @@
         margin: 0 8px;
         padding: 0 8px;
         height: 8px;
-        border-right: 1px solid #9466FF;
-        border-left: 1px solid #9466FF;
+        border-right: 1px solid #000;
+        border-left: 1px solid #000;
 
         &__link {
           display: block;
@@ -579,7 +579,7 @@
           }
 
           &:hover {
-            color: #9466FF;
+            color: #000000;
             transition: color .2s ease-in-out;
           }
 

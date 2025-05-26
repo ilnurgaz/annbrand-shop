@@ -194,7 +194,7 @@ const SizeTable = () => {
     style: {
       backgroundColor:
         item.isSelected || selectedSize === item.manufacturerSize.toLowerCase()
-          ? '#9466FF'
+          ? '#000'
           : 'transparent',
       pointerEvents: item.isAvailable ? 'auto' : 'none',
       opacity: item.isAvailable ? 1 : 0.5,
