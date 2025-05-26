@@ -43,8 +43,8 @@ const CatalogMenu = () => {
           handleCloseMenu
         },
         {
-          title: translations[lang].comparison['denim'],
-          href: '/catalog/cloth?offset=0&type=denim',
+          title: translations[lang].comparison['t-shirts'],
+          href: '/catalog/cloth?offset=0&type=t-shirts',
 
         },
         {
