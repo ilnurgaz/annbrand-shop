@@ -23,7 +23,7 @@
     top: 15px;
 
     &::before {
-      background-color: #E8E9EA;
+      background-color: #000000;
       content: '';
       height: 100%;
       width: 100%;
@@ -44,7 +44,7 @@
   &__title {
     margin: 0;
     margin-bottom: 10px;
-    color: #E8E9EA;
+    color: #000000;
     font-size: 1.125rem;
     line-height: 30px;
     text-align: left;
