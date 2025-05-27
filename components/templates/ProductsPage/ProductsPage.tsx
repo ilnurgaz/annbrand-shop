@@ -51,11 +51,6 @@ const ProductsPage = ({ searchParams, pageName }: IProductsPage) => {
               href: '/catalog/cloth?offset=0&type=jaket/',
             },
             {
-              id: 5,
-              title: translations[lang].comparison.summer,
-              href: '/catalog/cloth?offset=0&type=summer/',
-            },
-            {
               id: 6,
               title: translations[lang].comparison.belts,
               href: '/catalog/cloth?offset=0&type=belts/',
@@ -112,11 +107,6 @@ const ProductsPage = ({ searchParams, pageName }: IProductsPage) => {
               id: 3,
               title: translations[lang].comparison.jaket,
               filterHandler: () => handleApplyFiltersWithCategory('jaket'),
-            },
-            {
-              id: 4,
-              title: translations[lang].comparison.summer,
-              filterHandler: () => handleApplyFiltersWithCategory('summer'),
             },
             {
               id: 5,

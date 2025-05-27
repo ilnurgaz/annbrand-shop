@@ -53,11 +53,6 @@ const CatalogMenu = () => {
           handleCloseMenu
         },
         {
-          title: translations[lang].comparison.summer,
-          href: '/catalog/cloth?offset=0&type=summer',
-          handleCloseMenu
-        },
-        {
           title: translations[lang].comparison.bags,
           href: '/catalog/cloth?offset=0&type=bags',
           handleCloseMenu

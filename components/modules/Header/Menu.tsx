@@ -66,11 +66,6 @@ const Menu = () => {
       text: translations[lang].comparison['jaket'],
       href: '/catalog/cloth?offset=0&type=jaket',
     },
-    {
-      id: 4,
-      text: translations[lang].comparison['summer'],
-      href: '/catalog/cloth?offset=0&type=summer',
-    },
   ]
 
   const accessoriesLinks = [
