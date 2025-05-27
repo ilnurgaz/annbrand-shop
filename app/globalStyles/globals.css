@@ -303,9 +303,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .catalog-pagination-item.selected {
-  background-color: #000000a9;
+  background-color: #bbbbbb;
 }
 
 .catalog-pagination-item:hover.selected a {
-  background-color: #000000a9;
+  background-color: #bbbbbb;
 }

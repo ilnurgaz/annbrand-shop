@@ -522,12 +522,13 @@
           padding: 12px 24px;
           justify-content: center;
           cursor: pointer;
-          color: #F1F3F5;
+          color: #000000;
           transition: background-color .2s ease-in-out;
 
           &:hover {
-            background-color: #2A323F;
-            transition: background-color .2s ease-in-out;
+            background-color: #bbbbbb;
+            transition: backgrrgb(185, 185, 185)lor .2s ease-in-out;
+            color: rgb(0, 0, 0);
           }
         }
       }
@@ -560,13 +561,13 @@
 
         a {
           position: relative;
-          color: #E8E9EA;
+          color: #7c7c7c;
           text-decoration: none;
           transition: color .2s ease-in-out;
           cursor: pointer;
 
           &::before {
-            background-color: #E8E9EA;
+            background-color: #7c7c7c;
             content: '';
             height: 100%;
             width: 100%;
