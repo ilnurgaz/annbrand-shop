@@ -32,7 +32,7 @@ export async function POST(req: Request) {
         },
         confirmation: {
           type: 'redirect',
-          return_url: 'http://annbrand-shop.app/payment-success',
+          return_url: 'https://annbrand-shop.vercel.app/payment-success',
         },
         capture: true,
         description: reqBody.description,
