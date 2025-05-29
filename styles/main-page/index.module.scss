@@ -83,6 +83,7 @@
 
       &__img {
         height: 580px;
+        width: auto;
 
         @media (max-width: 1460px) {
           height: 480px;
