@@ -82,16 +82,13 @@
       }
 
       &__img {
-        width: 475px;
         height: 580px;
 
         @media (max-width: 1460px) {
-          width: 375px;
           height: 480px;
         }
 
         @media (max-width: 990px) {
-          width: 275px;
           height: 380px;
         }
       }

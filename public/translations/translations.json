@@ -119,9 +119,9 @@
       "is_new": "New",
       "is_bestseller": "Bestseller",
       "tShirt": "T-Shirt",
-      "violet": "brown",
-      "orange": "white",
-      "black": "black"
+      "violet": "ivory",
+      "orange": "violet",
+      "black": "gray"
     },
     "product": {
       "available": "Available",
@@ -393,10 +393,10 @@
       "brand_idea": "Идея колекции «Black»",
       "is_new": "Новинка",
       "is_bestseller": "Хит",
-      "tShirt": "Майка",
-      "violet": "коричневая",
-      "orange": "белая",
-      "black": "черная"
+      "tShirt": "Футболка",
+      "violet": "слоновья кость",
+      "orange": "фиалковая",
+      "black": "серая"
     },
     "product": {
       "available": "Есть в наличии",
