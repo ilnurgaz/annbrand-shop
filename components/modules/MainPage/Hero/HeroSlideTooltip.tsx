@@ -12,7 +12,7 @@ const HeroSlideTooltip = ({ title, image }: IHeroSlideTooltip) => (
     />
     <p className={styles.hero__slider__slide__popup__inner}>
       <b className={styles.hero__slider__slide__popup__title}>{title}</b>
-      <span className={styles.hero__slider__slide__popup__price}>760 ₽</span>
+      <span className={styles.hero__slider__slide__popup__price}>3000 ₽</span>
     </p>
   </div>
 )
